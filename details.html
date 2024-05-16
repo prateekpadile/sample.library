@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library managment system</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <section id="header">
+        <button class="logo" onclick="window.location.href='index.html';"></button> 
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="available.html">AVAILABILITY</a></li>
+                <li><a href="issue.html">BORROW</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a class="active" href="cart.html">CART</a></li>
+            </ul> 
+        </div>
+    </section>
+
+    <div id="step">
+        <img src="ss.png">
+    </div>
+
+<section>
+  <div class="container">
+    <h2>Fill Up Your Details</h2>
+    <form action="confirm-order.html " method="post">
+      <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label id="day" >Year of Study   : </label>
+        <select id="day">
+          <option id="day1">First Year</option>
+          <option id="day1">Second Year</option>
+          <option id="day1">Third Year</option> 
+          <option id="day1">Fourth Year</option> 
+          <option id="day1">Master's / PhD</option> 
+          <option id="day1">Faculty</option>  
+       </select>
+       <label id="day" >Division   : </label>
+       <select id="day">
+         <option id="day1">A</option>
+         <option id="day1">B</option>
+         <option id="day1">C</option> 
+         <option id="day1">D</option> 
+         <option id="day1">E</option> 
+         <option id="day1">F</option>   
+         <option id="day1">G</option>
+         <option id="day1">H</option>
+         <option id="day1">I</option>
+      </select>
+       </div>
+       <br>
+      <div class="form-group">
+        <label for="prn">PRN :</label>
+        <input type="text" id="PRN" name="PRN" required>
+      </div>
+      <script>
+        function showPopup() {
+          alert("Would you like to Comfirm your order ?");
+        }
+      </script>
+      <div class="form-group">
+        <button type="submit" onclick="showPopup()">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+</body>
+</html>

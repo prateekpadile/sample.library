@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart is Empty</title>
+  <link rel="stylesheet" href="cart.css">
+  <style>
+    #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #000000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;    
+}
+button.logo{
+    border-style: hidden;
+    background-color: #000000;
+    background-image: url(./imgs/logo.png);
+    height: 70px;
+    width: 200px;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.2s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color : #bc8c8c;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #edf2f2;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}    
+.container
+ {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  </style>
+</head>
+<body style="background-color: black;"></body>
+<section id="header">
+    <button class="logo" onclick="window.location.href='index.html';"></button> 
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="available.html">AVAILBILITY</a></li>
+            <li><a href="issue.html">BORROW</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a class="active" href="cart.html">CART</a></li>
+        </ul> 
+    </div>
+</section>
+<br>
+<section>
+  <div class="container">
+    <h1>Your Cart is Empty</h1>
+    <p>Add some items to your cart to get started.</p>
+  </div>
+</section>
+</body>
+</html>
